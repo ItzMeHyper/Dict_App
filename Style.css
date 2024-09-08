@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
 body {
   background: url('Src/bg1.jpg') no-repeat center center;
   background-size: cover;
@@ -17,8 +16,6 @@ body {
   align-items: center;
   height: 100vh;
 }
-
-
 body::before {
   content: "";
   position: absolute;
@@ -29,65 +26,61 @@ body::before {
   background: rgba(0, 0, 0, 0.4);
   z-index: 0;
 }
-
 .wrapper {
   background: rgba(238, 215, 215, 0.1);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(10px);
-  width: 80%; 
-  max-width: 600px; 
+  width: 80%;
+  max-width: 600px;
   padding: 40px 30px;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(38, 33, 61, 0.3);
   position: relative;
   z-index: 1;
 }
-
 .search-box {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-bottom: 20px;
 }
-
 .search-box input {
+  flex: 1;
   padding: 10px;
-  width: 70%;
   border: none;
   outline: none;
   border-bottom: 3px solid #ae9cff;
   font-size: 16px;
-  background: rgba(255, 255, 255, 0.8); 
-  border-radius: 5px; 
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
 }
-
 .search-box button {
+  flex: 0 0 auto;
   padding: 10px;
-  width: 25%;
-  background-color: rgba(174, 156, 255, 0.9); 
+  width: auto;
+  max-width: 120px;
+  background-color: rgba(174, 156, 255, 0.9);
   border: none;
   outline: none;
   color: #ffffff;
   border-radius: 5px;
   font-size: 16px;
+  text-align: center;
 }
-
 .result {
   position: relative;
 }
-
 .result h3 {
   font-size: 30px;
   color: #a98cff;
   margin-bottom: 20px;
 }
-
 .result .word {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
-
 .result button {
   background-color: transparent;
   color: rgba(174, 156, 255, 0.9);
@@ -95,7 +88,6 @@ body::before {
   outline: none;
   font-size: 18px;
 }
-
 .result .details {
   display: flex;
   gap: 10px;
@@ -103,11 +95,9 @@ body::before {
   margin: 5px 0 20px 0;
   font-size: 14px;
 }
-
 .word-meaning {
   color: #d3d6e0;
 }
-
 .word-example {
   color: #8f909a;
   font-style: italic;
@@ -115,8 +105,26 @@ body::before {
   padding-left: 20px;
   margin-top: 30px;
 }
-
 .error {
   margin-top: 80px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .search-box {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .search-box input {
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 15px;
+  }
+  .search-box button {
+    width: 50%;
+    text-align: center;
+    max-width: none;
+    border-radius: 15px;
+  }
 }
