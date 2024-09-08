@@ -2,6 +2,7 @@
 Just a basic Dictionary page using [Free Dictionary API]
 Preview- dictapp.pages.dev
 
+ <img src="https://github.com/user-attachments/assets/a0524908-0933-4ab5-9741-699dd3b06bbd" width="100" height="100"> 
 ![p2](https://github.com/user-attachments/assets/a0524908-0933-4ab5-9741-699dd3b06bbd)
 
 
