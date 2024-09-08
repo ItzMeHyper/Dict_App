@@ -41,7 +41,7 @@ function updateResult(data, word) {
         <p class="word-example">
             ${data.meanings[0].definitions[0].example || ""}
         </p>`;
-    sound.setAttribute("src", `${data.phonetics[1].audio}`);;
+    //sound.setAttribute("src", `${data.phonetics[1].audio}`);;
 }
 
 function showError(message) {
