@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dictionary app to search for words and their meanings." />
+    <title>Dictionary | Hyper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="Dictionary.css" />
+</head>
+<body>
+    <audio id="sound" aria-hidden="true"></audio>
+    <div class="wrapper">
+        <div class="search-box">
+            <input type="text" placeholder="Type the word here..." id="input-word" aria-label="Type the word here" />
+            <button id="search-btn" aria-label="Search">Search</button>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="DictionaryScript.js" defer></script>
+</body>
+</html>
